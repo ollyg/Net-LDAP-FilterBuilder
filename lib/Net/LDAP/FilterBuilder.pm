@@ -9,7 +9,7 @@ package Net::LDAP::FilterBuilder;
 use strict;
 use warnings FATAL => 'all';
 
-our $VERSION = '1.0002';
+our $VERSION = '1.0003';
 $VERSION = eval $VERSION; # numify for warning-free dev releases
 
 use overload '""' => \&as_str;
@@ -102,7 +102,7 @@ Net::LDAP::FilterBuilder - Build LDAP filter statements
 
 =head1 VERSION
 
-This document refers to version 1.0002 of Net::LDAP::FilterBuilder
+This document refers to version 1.0003 of Net::LDAP::FilterBuilder
 
 =head1 PURPOSE
 
