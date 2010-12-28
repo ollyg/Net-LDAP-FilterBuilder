@@ -217,10 +217,6 @@ Returns the newly-negated L<Net::LDAP::FilterBuilder>.
 
 =back
 
-=head1 AUTHOR
-
-Originally written by Ray Miller.
-
 =head1 MAINTAINER
 
 Oliver Gorwits C<< <oliver.gorwits@oucs.ox.ac.uk> >>
