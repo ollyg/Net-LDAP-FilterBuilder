@@ -1,16 +1,7 @@
-#
-# $HeadURL$
-# $LastChangedRevision$
-# $LastChangedDate$
-# $LastChangedBy$
-#
 package Net::LDAP::FilterBuilder;
 
 use strict;
 use warnings FATAL => 'all';
-
-our $VERSION = '1.0004';
-$VERSION = eval $VERSION; # numify for warning-free dev releases
 
 use overload '""' => \&as_str;
 
@@ -94,15 +85,7 @@ sub as_str {
 
 1;
 
-__END__
-
-=head1 NAME
-
-Net::LDAP::FilterBuilder - Build LDAP filter statements
-
-=head1 VERSION
-
-This document refers to version 1.0004 of Net::LDAP::FilterBuilder
+# ABSTRACT: Build LDAP filter statements
 
 =head1 PURPOSE
 
@@ -242,12 +225,4 @@ Originally written by Ray Miller.
 
 Oliver Gorwits C<< <oliver.gorwits@oucs.ox.ac.uk> >>
 
-=head1 COPYRIGHT & LICENSE
-
-Copyright (c) The University of Oxford 2008.
-
-This library is free software; you can redistribute it and/or modify it under
-the same terms as Perl itself.
-
 =cut
-
