@@ -1,16 +1,10 @@
-#
-# $HeadURL$
-# $LastChangedRevision$
-# $LastChangedDate$
-# $LastChangedBy$
-#
 package Net::LDAP::FilterBuilder;
+BEGIN {
+  $Net::LDAP::FilterBuilder::VERSION = '1.103620';
+}
 
 use strict;
 use warnings FATAL => 'all';
-
-our $VERSION = '1.0004';
-$VERSION = eval $VERSION; # numify for warning-free dev releases
 
 use overload '""' => \&as_str;
 
@@ -94,7 +88,11 @@ sub as_str {
 
 1;
 
+# ABSTRACT: Build LDAP filter statements
+
+
 __END__
+=pod
 
 =head1 NAME
 
@@ -102,13 +100,7 @@ Net::LDAP::FilterBuilder - Build LDAP filter statements
 
 =head1 VERSION
 
-This document refers to version 1.0004 of Net::LDAP::FilterBuilder
-
-=head1 PURPOSE
-
-Use this module to construct LDAP filter statments which are compliant with
-the RFC 4515 syntax and also safely escape special characters. Filter
-statements can be built incrementally using simple logic operations.
+version 1.103620
 
 =head1 SYNOPSIS
 
@@ -153,6 +145,12 @@ Alternate operators are available through the three-argument constructor form:
 This is a convenience module which greatly simplifies the construction of LDAP
 query filter statments, which are described in RFC 4515 and also the
 L<Net::LDAP::Filter> manual page. 
+
+=head1 PURPOSE
+
+Use this module to construct LDAP filter statments which are compliant with
+the RFC 4515 syntax and also safely escape special characters. Filter
+statements can be built incrementally using simple logic operations.
 
 =head1 USAGE
 
@@ -234,20 +232,20 @@ Returns the newly-negated L<Net::LDAP::FilterBuilder>.
 
 =back
 
-=head1 AUTHOR
-
-Originally written by Ray Miller.
-
 =head1 MAINTAINER
 
 Oliver Gorwits C<< <oliver.gorwits@oucs.ox.ac.uk> >>
 
-=head1 COPYRIGHT & LICENSE
+=head1 AUTHOR
 
-Copyright (c) The University of Oxford 2008.
+Originally written by Ray Miller.
 
-This library is free software; you can redistribute it and/or modify it under
-the same terms as Perl itself.
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2010 by University of Oxford.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
 
 =cut
 

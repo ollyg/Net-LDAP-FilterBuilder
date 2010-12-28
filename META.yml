@@ -1,0 +1,22 @@
+---
+abstract: 'Build LDAP filter statements'
+author:
+  - 'Originally written by Ray Miller.'
+build_requires:
+  Test::More: 0
+configure_requires:
+  ExtUtils::MakeMaker: 6.31
+dynamic_config: 0
+generated_by: 'Dist::Zilla version 4.200000, CPAN::Meta::Converter version 2.102400'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Net-LDAP-FilterBuilder
+requires:
+  overload: 0
+resources:
+  bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=Net-LDAP-FilterBuilder
+  homepage: http://github.com/ollyg/Net-LDAP-FilterBuilder/wiki
+  repository: git://github.com/ollyg/Net-LDAP-FilterBuilder.git
+version: 1.103620
