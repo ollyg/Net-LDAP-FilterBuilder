@@ -44,11 +44,11 @@ SYNOPSIS
 
 DESCRIPTION
     This is a convenience module which greatly simplifies the construction
-    of LDAP query filter statments, which are described in RFC 4515 and also
+    of LDAP query filter statements, which are described in RFC 4515 and also
     the Net::LDAP::Filter manual page.
 
 PURPOSE
-    Use this module to construct LDAP filter statments which are compliant
+    Use this module to construct LDAP filter statements which are compliant
     with the RFC 4515 syntax and also safely escape special characters.
     Filter statements can be built incrementally using simple logic
     operations.
@@ -87,7 +87,7 @@ USAGE
 
   Special Character Escaping
     If you happen to include one of the small set of characters which are of
-    special significance to LDAP filter statments in your value argument,
+    special significance to LDAP filter statements in your value argument,
     then those characters will be escaped. The list of characters is:
 
      ( ) * \ NUL

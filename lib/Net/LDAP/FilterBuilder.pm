@@ -143,12 +143,12 @@ Alternate operators are available through the three-argument constructor form:
 =head1 DESCRIPTION
 
 This is a convenience module which greatly simplifies the construction of LDAP
-query filter statments, which are described in RFC 4515 and also the
+query filter statements, which are described in RFC 4515 and also the
 L<Net::LDAP::Filter> manual page. 
 
 =head1 PURPOSE
 
-Use this module to construct LDAP filter statments which are compliant with
+Use this module to construct LDAP filter statements which are compliant with
 the RFC 4515 syntax and also safely escape special characters. Filter
 statements can be built incrementally using simple logic operations.
 
@@ -188,7 +188,7 @@ takes the first argument to be the operator, whatever it might be.
 =head2 Special Character Escaping
 
 If you happen to include one of the small set of characters which are of
-special significance to LDAP filter statments in your value argument, then
+special significance to LDAP filter statements in your value argument, then
 those characters will be escaped. The list of characters is:
 
  ( ) * \ NUL 
