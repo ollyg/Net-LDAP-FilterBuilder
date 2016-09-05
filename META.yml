@@ -19,4 +19,4 @@ resources:
   bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=Net-LDAP-FilterBuilder
   homepage: http://github.com/ollyg/Net-LDAP-FilterBuilder/wiki
   repository: git://github.com/ollyg/Net-LDAP-FilterBuilder.git
-version: 1.103620
+version: 1.200000
