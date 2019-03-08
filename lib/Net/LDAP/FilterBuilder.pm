@@ -1,6 +1,6 @@
 package Net::LDAP::FilterBuilder;
 BEGIN {
-  $Net::LDAP::FilterBuilder::VERSION = '1.200000';
+  $Net::LDAP::FilterBuilder::VERSION = '1.200001';
 }
 
 use strict;
@@ -100,7 +100,7 @@ Net::LDAP::FilterBuilder - Build LDAP filter statements
 
 =head1 VERSION
 
-version 1.200000
+version 1.200001
 
 =head1 SYNOPSIS
 
